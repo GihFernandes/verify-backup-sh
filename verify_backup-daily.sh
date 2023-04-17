@@ -6,7 +6,8 @@
 #04/13/2023 16:17
 #
 
-cd /home/ponto/dumps/dumprw/
+#Put the path to backups directory here
+cd /home/backup-daily/
 
 new_backup_name=$(find . -mmin -480 -name "*.tar.gz" | sort -nr | sed '1!d' | awk {'print $1'} | sed 's|^./||')
 old_backup_name=$(find . -mmin -480 -name "*.tar.gz" | sort -nr | sed '2!d' | awk {'print $1'} | sed 's|^./||')
