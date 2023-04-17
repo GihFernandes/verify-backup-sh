@@ -21,7 +21,7 @@ function backup_compare(){
     echo "sucess"
 	
 	else 
-    echo "erro"
+    echo "error"
 	fi	
 }
 
