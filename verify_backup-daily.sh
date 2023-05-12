@@ -6,6 +6,9 @@
 #04/13/2023 16:17
 #
 
+#It is used to print commands
+set -xe
+
 function verify_backup(){
 	#Put the path to backups directory here
 	cd /home/backup-daily/
